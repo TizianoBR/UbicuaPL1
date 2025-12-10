@@ -23,12 +23,6 @@ void ConnectMqtt()
 			Serial.println(" try again in 5 seconds");
 
 			delay(5000);
-
-			Serial.printf("\n--- Scan @ %lu ms ---\n", millis());
-  		int n = WiFi.scanNetworks();
-  		for (int i = 0; i < n; i++) {
-    	Serial.printf("%2d: SSID='%s'  Chan=%d  RSSI=%d\n", i+1, WiFi.SSID(i).c_str(), WiFi.channel(i), WiFi.RSSI(i));
-  		}
 		}
 	}
 }

@@ -2,7 +2,6 @@
 #include <ArduinoJson.h>
 #include <PubSubClient.h>
 #include <ESP32Servo.h>
-#include "esp_wifi.h"
 
 //Component pins
 #define PEATONES_G 14

@@ -67,9 +67,9 @@ void publishJson(){
   }
   doc["data"]["state"]=str;
   doc["data"]["TL_type"]="mixed";
-  // if (state!=Gr){
-  //   doc["data"]["time"]=stateTime[state-1];
-  // }
+  if (state!=Gr){
+    doc["data"]["time"]=stateTime[state-1];
+  }
   doc["data"]["wait"]=waiting?1:0;
   doc["data"]["lock"]=emergencia?1:0;
 
